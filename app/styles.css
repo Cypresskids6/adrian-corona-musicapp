@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Crushed&family=Merienda:wght@300..900&family=Oxygen:wght@300;400;700&display=swap');
+
+@font-face{
+    font-family: trajan;
+    src: url(./trajan.ttf);
+}
+
+
+:root{
+    /* CSS HEX */
+--rich-Black: #0f0f1b;
+--Ultra-violet: #565a75;
+--French-gray: #c6b7be;
+--baby-powder: #fafbf6;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    width:100%;
+    background-color: var(--rich-Black);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Ultra-violet);
+}
+
+.nav-logo{
+    height:90%;
+}
+
+.nav-link{
+    margin-right:2vmin;
+    text-decoration: none;
+    color: var(--baby-powder);
+    font-size:3.5vmin;
+    font-family: Merienda;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    scale: 0.98;
+}
+
+.nav-title{
+    font-size:5vmin;
+    font-family: trajan;
+}
+
+.body-content{
+    width:100%;
+    height: fit-content;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vmin;
+    background: linear-gradient(0.25turn, var(--Ultra-violet), var(--French-gray), var(--Ultra-violet));
+}
+.footer{
+    background-color: var(--rich-Black);
+    height:fit-content;
+    min-height:20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-grid{
+    margin-top:10vh; 
+    width:60%;
+    height:60vh; 
+    background-color: var(--baby-powder);
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1vmin; 
+}
+
+.lyric{
+    font-size:4vmin;
+    text-align: center;
+    color: var(--licorice); 
+    margin-top:2vmin;
+    font-family: Merienda;
+}
+
+.image-box{
+    width: 100%;
+    height:100%;
+    max-height:60vh; 
+    position: relative;
+    top:0;
+    left:0;
+}
+
+.music-image{
+    width:45vmin;
+    height:45vmin;
+    transition: .05s ease;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.music-image:hover{
+    filter: brightness(50%);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.song-name{
+    font-size:8.5vmin;
+    color: var(--rich-Black);
+    text-align: center;
+    line-height: 80%;
+    margin-bottom:2vmin;
+    font-family: Oxygen;
+}
+
+.music-supp-text{
+    font-size:4vmin;
+    text-align: center;
+    font-family: Merienda;
+}
+
+.artist-name{
+    font-size:5vmin;
+    color: var(--rich-Black);
+    text-align: center;
+    font-family: Oxygen;
+}
+
+.album{
+    color: var(--rich-Black);
+    font-size:5vmin;
+    text-align: center;
+    font-family: Oxygen;
+}
+
+.song-link{
+    font-size:3vmin;
+    color: var(--rich-Black);
+    text-decoration: none;
+
+}
+
+.song-link:hover{
+    text-decoration: underline;
+    scale: 0.98;
+}
+
+.music-info-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.play-button{
+    width: 40vmin;
+    height: 40vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%) translateY(-50%);
+    z-index: 0;
+}
